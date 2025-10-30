@@ -4,7 +4,7 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
-def brecho_das_ladies():
+def brecho_2_irmaos():
     return f'''
     <body style="background-color: #fef4e6; 
                  display: flex; 
