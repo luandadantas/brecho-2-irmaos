@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def brecho_das_ladies():
     return f'''
-    <body style="background-color: #f8e6f0; 
+    <body style="background-color: #fef4e6; 
                  display: flex; 
                  justify-content: center; 
                  align-items: center; 
@@ -15,9 +15,11 @@ def brecho_das_ladies():
                  text-align: center; 
                  font-family: Arial, sans-serif;">
         <div>
-            <h1 style="font-size: 4em; margin: 0;">Nosso Brechó</h1>
-            <h3 style="font-size: 2em; margin: 10px 0;">Um brechó que tem de TUDOOO!</h3>
-            <hr style="width: 300px; border: 3px solid #d4a5c2;">
+            <h1 style="font-size: 4em; margin: 0;">Brechó 2 Irmãos</h1>
+            <hr style="width: 300px; border: 3px solid #f4a460;">
+            <img src="https://raw.githubusercontent.com/luandadantas/brecho-2-irmaos/refs/heads/main/photo-b2i.jpeg" 
+                 alt="Brechó 2 Irmãos" 
+                 style="width: 400px; height: auto; margin-top: 20px; border-radius: 10px;">
         </div>
     </body>
     '''

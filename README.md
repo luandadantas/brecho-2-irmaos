@@ -1,6 +1,9 @@
 # Brechó 2 Irmãos
 
+![brecho-2-irmaos](photo-b2i.jpeg)
+
 Esse projeto é uma aplicação Flask simples para um brechó, containerizada com Docker e pronta para deploy no Kubernetes.
+
 
 ## 📋 Pré-requisitos
 
