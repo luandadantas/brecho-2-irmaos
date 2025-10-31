@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: b2i-deployment
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: brecho-2-irmaos
+  template:
+    metadata:
+      name: b2i-pod
+      labels:
+        app: brecho-2-irmaos
+    spec:
+      containers:
+      - name: b2i-container
+        image: app:latest
+        ports:
+        - containerPort: 5000
+        imagePullPolicy: Never

@@ -18,7 +18,14 @@ deploy-replicaset:
 	if kubectl get rs b2i-replicaset; then \
 	  kubectl delete rs b2i-replicaset; \
 	fi
-	kubectl apply -f k8s/replicaset.yaml
+	
+deploy-deployment:
+	docker build -t app .
+	kind load docker-image app:latest
+	if kubectl get deployment b2i-deployment; then \
+	  kubectl delete deployment b2i-deployment; \
+	fi
+	kubectl apply -f k8s/deployment.yaml
 
 run:
 	kubectl port-forward pod/b2i-pod 8080:5000
