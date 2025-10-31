@@ -12,32 +12,17 @@ Esse projeto é uma aplicação Flask simples para um brechó, containerizada co
 
 ## 🚀 Como rodar localmente
 
-1. **Construa a imagem Docker**:
-   ```bash
-   docker build -t app .
-   ```
+```bash
+make deploy
+```
 
-2. **Execute o container**:
-   ```bash
-   docker run -p 8080:5000 app
-   ```
+```bash
+make run
+```
 
-3. **Acesse a aplicação**:
+1. **Acesse a aplicação**:
    Abra seu navegador em: http://localhost:8080
 
-
-
-
-
-## 📁 Estrutura do Projeto
-
-```
-brecho-2-irmaos/
-├── app.py              # Aplicação Flask (site do brechó)
-├── Dockerfile          # Configuração do container Docker
-├── requirements.txt    # Dependências Python
-└── README.md          # Este arquivo
-```
 
 ## 📝 Notas
 

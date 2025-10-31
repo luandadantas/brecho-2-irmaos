@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: b2i-pod
+  labels:
+    app: brecho-2-irmaos
+spec:
+  containers:
+  - name: b2i-container
+    image: app:latest
+    ports:
+    - containerPort: 5000
+    imagePullPolicy: Never
