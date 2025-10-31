@@ -12,17 +12,18 @@ Esse projeto é uma aplicação Flask simples para um brechó, containerizada co
 
 ## 🚀 Como rodar localmente
 
+Faz o build do container, passar pra o cluster e sobe o pod:
 ```bash
 make deploy
 ```
 
+Roda a aplicação:
 ```bash
 make run
 ```
 
-1. **Acesse a aplicação**:
+**Acesse a aplicação**:
    Abra seu navegador em: http://localhost:8080
-
 
 ## 📝 Notas
 
