@@ -27,5 +27,17 @@ deploy-deployment:
 	fi
 	kubectl apply -f k8s/deployment.yaml
 
+deploy-service:
+	docker build -t app .
+	kind load docker-image app:latest
+	if kubectl get service b2i-service; then \
+	  kubectl delete service b2i-service; \
+	fi
+	if kubectl get deployment b2i-deployment; then \
+	  kubectl delete deployment b2i-deployment; \
+	fi
+	kubectl apply -f k8s/deployment.yaml
+	kubectl apply -f k8s/service.yaml
+
 run:
 	kubectl port-forward pod/b2i-pod 8080:5000
