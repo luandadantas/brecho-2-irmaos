@@ -40,4 +40,4 @@ deploy-service:
 	kubectl apply -f k8s/service.yaml
 
 run:
-	kubectl port-forward pod/b2i-pod 8080:5000
+	kubectl port-forward svc/b2i-service 8080:80
