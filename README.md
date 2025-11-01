@@ -2,7 +2,9 @@
 
 ![brecho-2-irmaos](photo-b2i.jpeg)
 
-Esse projeto é uma aplicação Flask simples para um brechó, containerizada com Docker e pronta para deploy no Kubernetes.
+Esse projeto é uma aplicação Flask simples para um brechó, containerizada com Docker e pronta para deploy no Kubernetes. 
+A ideia é que esse projeto seja o começo pra o entendendimento sobre Kubernetes.
+É possível criar a sua própria versão, só seguir os passos que foram feitos nessa [apresentação pra Comunidade Pyladies Floripa](https://bit.ly/lu-apresentacao-kubernetes). 
 
 
 ## 📋 Pré-requisitos
